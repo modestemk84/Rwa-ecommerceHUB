@@ -1,0 +1,156 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 0;
+}
+header .logo {
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #eee;
+}
+.video-wrapper {
+  margin: 20px auto;
+  max-width: 560px;
+}
+
+.featured-products {
+  padding: 20px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+.product-card h4 {
+  margin: 10px 0;
+}
+.product-card p {
+  margin: 8px 0;
+}
+.product-card button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Product detail page */
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.product-detail img {
+  max-width: 400px;
+  width: 100%;
+}
+.prod-info {
+  flex: 1;
+}
+.prod-info h2 {
+  margin-bottom: 10px;
+}
+.prod-info p {
+  margin-bottom: 15px;
+}
+.prod-info button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Cart page */
+#cart-items {
+  margin: 20px;
+}
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.cart-item span {
+  margin-right: 20px;
+}
+#cart-total {
+  margin: 20px;
+  font-size: 1.2em;
+}
+#checkout {
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+footer a {
+  color: #4facfe;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Contact form */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  cursor: pointer;
+}
