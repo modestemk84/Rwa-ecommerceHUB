@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart — Rwanda Trends Online</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>Rwanda Trends Online</h1></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category.html?cat=electronics">Electronics</a></li>
+        <li><a href="category.html?cat=fashion">Fashion</a></li>
+        <li><a href="category.html?cat=home">Home & Living</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items">
+      <!-- JS will fill cart items -->
+    </div>
+    <div id="cart-total">
+      Total: <span id="total-price">RWF 0</span>
+    </div>
+    <button id="checkout">Checkout (Contact via WhatsApp)</button>
+  </main>
+
+  <footer>
+    <p>WhatsApp: <a href="https://wa.me/250723502423">+250 723 502 423</a></p>
+    <p>Email: <a href="mailto:info@rwandatrendsonline.com">info@rwandatrendsonline.com</a></p>
+    <p>&copy; 2025 Rwanda Trends Online</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
