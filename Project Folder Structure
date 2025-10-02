@@ -1,0 +1,35 @@
+from zipfile import ZipFile
+import os
+
+# Folder and file structure
+project_name = "rwanda-trends-online"
+structure = {
+    "": ["index.html", "about.html", "contact.html", "category.html", "product.html", "cart.html", "README.md"],
+    "css": ["styles.css"],
+    "js": ["script.js"],
+    "images": ["product1.jpg", "product2.jpg"]
+}
+
+# Sample content for text files (short versions or placeholders for zip)
+file_contents = {
+    "index.html": "<!DOCTYPE html><html><head><title>Home</title></head><body><h1>Rwanda Trends Online</h1></body></html>",
+    "about.html": "<!DOCTYPE html><html><head><title>About</title></head><body><h1>About Us</h1></body></html>",
+    "contact.html": "<!DOCTYPE html><html><head><title>Contact</title></head><body><h1>Contact</h1></body></html>",
+    "category.html": "<!DOCTYPE html><html><head><title>Category</title></head><body><h1>Category Page</h1></body></html>",
+    "product.html": "<!DOCTYPE html><html><head><title>Product</title></head><body><h1>Product Detail</h1></body></html>",
+    "cart.html": "<!DOCTYPE html><html><head><title>Cart</title></head><body><h1>Your Cart</h1></body></html>",
+    "README.md": "# Rwanda Trends Online\nE-commerce website project.",
+    "css/styles.css": "body { font-family: Arial; }",
+    "js/script.js": "console.log('Hello from Rwanda Trends Online');"
+}
+
+# Create the zip file
+zip_filename = f"{project_name}.zip"
+with ZipFile(zip_filename, 'w') as zipf:
+    for folder, files in structure.items():
+        for filename in files:
+            path = f"{folder}/{filename}" if folder else filename
+            content = file_contents.get(path, "Placeholder content")
+            zipf.writestr(f"{project_name}/{path}", content)
+
+print(f"✅ Zip file created: {zip_filename}")
