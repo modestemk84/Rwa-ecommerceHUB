@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rwanda Trends Online — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Rwanda Trends Online</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category.html?cat=electronics">Electronics</a></li>
+        <li><a href="category.html?cat=fashion">Fashion</a></li>
+        <li><a href="category.html?cat=home">Home & Living</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Rwanda Trends Online</h2>
+      <p>Your go-to place for electronics, fashion, home & more.</p>
+      <!-- YouTube embed section -->
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/?listType=user_uploads&list=rwandatrendsonline-j4t" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h3>Featured Products</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/product1.jpg" alt="Product 1" />
+          <h4>Product One</h4>
+          <p>RWF 50,000</p>
+          <button class="btn-add" data-id="p1">Add to Cart</button>
+          <button class="btn-whatsapp" data-id="p1">WhatsApp Order</button>
+        </div>
+        <div class="product-card">
+          <img src="images/product2.jpg" alt="Product 2" />
+          <h4>Product Two</h4>
+          <p>RWF 30,000</p>
+          <button class="btn-add" data-id="p2">Add to Cart</button>
+          <button class="btn-whatsapp" data-id="p2">WhatsApp Order</button>
+        </div>
+        <!-- add more product-cards as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us via WhatsApp: <a href="https://wa.me/250723502423">+250 723 502 423</a></p>
+    <p>Email: <a href="mailto:info@rwandatrendsonline.com">info@rwandatrendsonline.com</a></p>
+    <p>&copy; 2025 Rwanda Trends Online</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
